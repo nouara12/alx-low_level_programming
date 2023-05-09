@@ -4,7 +4,7 @@
  * print_diagsums - prints the sum
  * @a: int input
  * @size: int input
- * Return: 0
+ * Return: always 0 (success)
  */
 void print_diagsums(int *a, int size)
 {

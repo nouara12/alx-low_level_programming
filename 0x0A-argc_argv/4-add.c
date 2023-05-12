@@ -10,18 +10,15 @@ int atoi(char *s);
 int main(int argc, char **argv)
 {
 	int sum = 0;
-	int i = 1;
+	char *x;
 
-	if (argc > 1)
-	for (; i < argc; i++)
+	while (--argc)
 	{
-	sum += atoi(argv[i]);
+	for (x = argv[argc]; *x; x++)
+		if (*x < '0' || *x > '9')
+			return (printf("Error\n"), 1);
+	sum += atoi(argv[argc]);
+	}
 	printf("%d\n", sum);
-	}
-	else
-	{
-		printf("Error\n");
-	return (1);
-	}
 	return (0);
 }

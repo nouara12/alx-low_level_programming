@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 int _atoi(char *s);
@@ -7,7 +8,7 @@ int _atoi(char *s);
  * @argv: array
  * Return: 1 (erreur) If the program does not receive two arguments
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 	int mult;
 

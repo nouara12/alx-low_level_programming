@@ -10,12 +10,12 @@ int _atoi(char *s);
  */
 int main(int argc, char *argv[])
 {
-	int mult;
+	int sum;
 
 	if (argc == 3)
 	{
-		mult = atoi(argv[1]) * atoi(argv[2]);
-		printf("%d\n", mult);
+		sum = atoi(argv[1]) * atoi(argv[2]);
+		printf("%d\n", sum);
 	}
 	else
 	{

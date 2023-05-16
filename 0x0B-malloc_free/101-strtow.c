@@ -8,8 +8,7 @@
  */
 int wrdcnt(char *l)
 {
-	int a;
-	int x = 0;
+	int a, x = 0;
 
 	for (a = 0; l[a]; a++)
 	{
@@ -31,12 +30,7 @@ int wrdcnt(char *l)
  */
 char **strtow(char *str)
 {
-	int d;
-	int f;
-	int g;
-	int h;
-	int j = 0;
-	int k = 0;
+	int d, f, g, h, j = 0, k = 0;
 	char **c;
 
 	if (str == NULL || *str == '\0')

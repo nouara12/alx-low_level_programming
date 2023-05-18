@@ -1,12 +1,11 @@
 #include "main.h"
-#include <stddef.h>
 #include <stdlib.h>
-#include <stdio.h>
 /**
  * _memset - filles memory
  * @s: pointer
  * @b: caracter
  * @n: unsigned intiger
+ *
  * Return: l
  */
 char *_memset(char *s, char b, unsigned int n)

@@ -1,25 +1,22 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * _memset - filles memory
- * @s: pointer
- * @b: caracter
- * @n: unsigned intiger
- *
- * Return: pointer
+ * @l: pointer
+ * @c: caracter
+ * @i: unsigned intiger
+ * Return: l
  */
-char *_memset(char *s, char b, unsigned int n)
+char *_memset(char *l, char c, unsigned int i)
 {
-	unsigned int i;
+	char *t = l;
 
-	for (i = 0; i < n; i++)
-	{
-		s[i] = b;
-	}
+	while (i--)
+		*l++ = c;
 
-	return (s);
+	return (t);
 }
-
 /**
  * _calloc - allocates memory for an array, using malloc
  * @nmemb: unsigned intiger
@@ -34,7 +31,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	p = malloc(size * nmemb);
 
-	if (p == NULL)
+	if (p == 0)
 		return (NULL);
 	_memset(p, 0, size * nmemb);
 

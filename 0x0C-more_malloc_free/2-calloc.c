@@ -6,7 +6,7 @@
  * @b: caracter
  * @n: unsigned intiger
  *
- * Return: l
+ * Return: pointer
  */
 char *_memset(char *s, char b, unsigned int n)
 {

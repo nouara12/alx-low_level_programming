@@ -18,20 +18,17 @@ int _strlen(const char *s)
 }
 
 /**
- * *_strcpy - copies the string pointed to by src,
+ * _strcpy - copies the string pointed to by src,
  * @dest: char type string
  * @src: char type string
  * Return: the pointer to dest
  */
 char *_strcpy(char *dest, char *src)
 {
-	int y = 0;
+	int y;
 
-	for (; src[y]; )
-		y++;
-	{
+	for (y = 0; src[y]; y++)
 		dest[y] = src[y];
-	}
 	dest[y] = '\0';
 
 	return (dest);

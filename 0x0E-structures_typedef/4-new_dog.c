@@ -9,11 +9,10 @@
  */
 int _strlen(const char *s)
 {
-	int x;
+	int x = 0;
 
-	while ((x = 0), *s++)
+	while (*s++)
 		x++;
-
 	return (x);
 }
 

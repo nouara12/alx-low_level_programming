@@ -6,7 +6,7 @@
  * @n: number of arguments
  * @...: integers to sum
  *
- * Return: 0 if n == 0
+ * Return: 0 if n == 0, otherwise the sum
  */
 int sum_them_all(const unsigned int n, ...)
 {

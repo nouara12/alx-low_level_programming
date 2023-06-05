@@ -6,9 +6,10 @@
  * @h: first node of list
  * Return: number of elements in the list
  */
+
 size_t free_listint_safe(listint_t **h)
 {
-	size_t l = 0;
+	size_t len = 0;
 	int a;
 	listint_t *t;
 
@@ -22,16 +23,16 @@ size_t free_listint_safe(listint_t **h)
 			t = (*h)->next;
 			free(*h);
 			*h = t;
-			l++;
+			len++;
 		}
 		else
 		{
 			free(*h);
 			*h = NULL;
-			l++;
+			len++;
 			break;
 		}
 	}
 	*h = NULL;
-	return (l);
+	return (len);
 }
